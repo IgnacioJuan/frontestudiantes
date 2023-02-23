@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export class EstudiantesService{
-    baseUrl="http://localhost:8080/estudiate"
+    baseUrl="https://est-rest-api.herokuapp.com/estudiate"
 
     create(estudiante){
         return axios.post(this.baseUrl+"/",estudiante).then(res=>res.data);
